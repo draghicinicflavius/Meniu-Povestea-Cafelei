@@ -25,6 +25,10 @@ body {
     filter: blur(25px) brightness(0.9); 
     transform: scale(1.1);
     z-index: -2;
+    
+    pointer-events: none; /* Previne ca fundalul să intercepteze scroll-ul */
+    will-change: transform; /* Spune telefonului să pregătească imaginea pentru a rămâne fixă */
+    -webkit-backface-visibility: hidden;
 }
 
 /* --- 2. PAGINA DE START (INTRO) --- */
