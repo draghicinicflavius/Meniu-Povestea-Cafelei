@@ -44,6 +44,20 @@ const desertData = [
         desc: "blat dens de cacao cu inima fierbinte de ciocolata"
     },
     { 
+        name: "BISCOTTINO", 
+        img: "images/biscotino.jpg", 
+        price: "25.00 LEI",
+        weight: "90 g",
+        desc: "o bucată din gustul copilăriei, redescoperită în mărul cu scorțișoară, crema de vanilie și blatul de biscuiți"
+    },
+    { 
+        name: "APPLE CAKE", 
+        img: "images/applecake.jpg", 
+        price: "25.00 LEI",
+        weight: "90 g",
+        desc: "o bucată din gustul copilăriei, redescoperită în mărul cu scorțișoară, crema de vanilie și blatul de biscuiți"
+    },
+    { 
         name: "CHEESECAKE", 
         img: "images/cheesecake.jpg", 
         price: "20.00 LEI",
@@ -56,7 +70,15 @@ const desertData = [
         price: "25.00 LEI",
         weight: "90 g",
         desc: "sorbet revigorant de lamaie servit in coaja fructului"
+    },
+    { 
+        name: "BAILEYS CAKE", 
+        img: "images/baileys.jfif", 
+        price: "20.00 LEI",
+        weight: "100 g",
+        desc: "mousse-ul cu lichior și sos de caramel, în glazură de ciocolată, oferă o experiență gustativă desăvârșită"
     }
+
 ];
 
 let currentDesertIndex = 0;
