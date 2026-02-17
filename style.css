@@ -349,3 +349,48 @@ footer {
     z-index: 10;
     pointer-events: none;
 }
+.contact-container {
+    text-align: center;
+    padding: 2rem 1.25rem; /* ~32px sus, 20px lateral */
+}
+
+.contact-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* ~20px distanță între butoane */
+    align-items: center;
+}
+
+.social-btn {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem 2.5rem;
+    width: 15rem; /* Lățime fixă în rem pentru aliniere perfectă */
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    transition: all 0.3s ease;
+    background: rgba(62, 39, 35, 0.1);
+}
+
+.social-btn:hover {
+    background: var(--gold);
+    color: #fff;
+    box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.3);
+}
+
+.contact-info {
+    margin-top: 3.75rem; /* ~60px */
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
