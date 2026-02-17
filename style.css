@@ -191,7 +191,7 @@ header {
         padding-top: 12vh !important; 
     }
     .logo-central { 
-        max-height: 50vh; /* O facem puțin mai mică să nu se bată cu textul */
+        max-height: 90vh; /* O facem puțin mai mică să nu se bată cu textul */
     }
 }
 
