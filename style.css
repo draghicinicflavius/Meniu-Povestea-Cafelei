@@ -15,26 +15,27 @@ body {
 /* --- 1. FUNDALUL MAGIC (AMBIENT) --- */
 #ambient-bg {
     position: fixed;
-    /* Îl facem puțin mai mare decât ecranul și îl tragem în exterior */
-    /* Astfel, când se mișcă bara browserului, nu are unde să mai sară */
-    top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 110%;
+    /* Inset: 0 acoperă tot ecranul, iar -20px oferă o marjă de siguranță să nu apară margini albe */
+    inset: -20px; 
     
+    /* Folosim lvh (Large Viewport Height) - unitatea care ignoră bara de adrese a browserului */
+    width: 100vw;
+    height: 100lvh; 
+
     background-image: url('images/povesteacafelei.jpeg'); 
     background-size: cover;
     background-position: center;
-    filter: blur(25px) brightness(0.9);
     
-    /* Forțăm randarea pe GPU pentru stabilitate maximă */
-    transform: translate3d(0, 0, 0) scale(1.1);
-    -webkit-transform: translate3d(0, 0, 0) scale(1.1);
+    /* Păstrăm blur-ul, dar scoatem orice animație sau transform care ar putea să-l facă să tremure */
+    filter: blur(25px) brightness(0.9); 
     
     z-index: -2;
     pointer-events: none;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+
+    /* Forțăm hardware-ul telefonului să "lipească" imaginea pe ecran */
+    will-change: transform;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 /* --- 2. PAGINA DE START (INTRO) --- */
