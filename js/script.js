@@ -33,7 +33,7 @@ const desertData = [
         name: "TIRAMISU", 
         img: "images/tiramisu.jfif", 
         price: "20.00 LEI",
-        weight: "120 g",
+        weight: "100 g",
         desc: "faimosul desert italian cu crema fina de mascarpone si espresso"
     },
     { 
@@ -54,14 +54,14 @@ const desertData = [
         name: "APPLE CAKE", 
         img: "images/applecake.jpg", 
         price: "25.00 LEI",
-        weight: "90 g",
+        weight: "116 g",
         desc: "o bucată din gustul copilăriei, redescoperită în mărul cu scorțișoară, crema de vanilie și blatul de biscuiți"
     },
     { 
         name: "CHEESECAKE", 
         img: "images/cheesecake.jpg", 
         price: "20.00 LEI",
-        weight: "135 g",
+        weight: "133 g",
         desc: "un tort rezistibil cu textura fina de branza si blat de biscuiti"
     },
     { 
