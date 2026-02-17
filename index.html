@@ -27,6 +27,7 @@
             <li><a href="#" onclick="showPage('bere')">Bere & Băuturi Tari</a></li>
             <li><a href="#" onclick="showPage('cocktail')">Cocktail & Vin</a></li>
             <li><a href="#" onclick="showPage('pizza')">Pizza</a></li>
+            <li><a href="#" onclick="showPage('desert')">Desert</a></li>
         </ul>
     </nav>
 
@@ -171,6 +172,28 @@
         <div class="produs"><div class="detalii"><h3>Perfect Vodka/ Lemon</h3></div><div class="pret">10 / 20 lei</div></div>
         <div class="produs"><div class="detalii"><h3>Jack Daniel's</h3></div><div class="pret">12 / 24 lei</div></div>
         <div class="produs"><div class="detalii"><h3>Miorița</h3></div><div class="pret">12.5 / 25 lei</div></div>
+    </section>
+
+
+    <section id="desert" class="page-content">
+        <h2>~Desert~</h2>
+    
+        <div class="card-slider">
+         <div class="card-header">
+            <h3 id="desert-name">Cheesecake cu fructe</h3>
+        </div>
+
+        <div class="slider-container">
+            <button class="prev-btn" onclick="changeDesert(-1)">&#10094;</button>
+            <img id="desert-img" src="images/povesteacafelei.jpeg" alt="Desert">
+            <button class="next-btn" onclick="changeDesert(1)">&#10095;</button>
+        </div>
+
+        <div class="info-card">
+            <p id="desert-price">18.00 LEI</p>
+            
+        </div>
+    </div>
     </section>
 
     <footer><small>by Flavius Draghici</small></footer>
