@@ -24,14 +24,14 @@ function showPage(pageId) {
 const desertData = [
     { 
         name: "PISTACHIO DOME", 
-        img: "images/pistachio.jpg", 
+        img: "images/pistachio.png", 
         price: "20.00 LEI",
         weight: "100 g",
         desc: "mousse de fistic pe blat de vanilie cu sos de fructe de padure"
     },
     { 
         name: "TIRAMISU", 
-        img: "images/tiramisu.jpg", 
+        img: "images/tiramisu.jfif", 
         price: "20.00 LEI",
         weight: "120 g",
         desc: "faimosul desert italian cu crema fina de mascarpone si espresso"
