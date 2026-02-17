@@ -35,7 +35,7 @@ body {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    padding: 80px 20px 40px 20px; 
+    padding: 40px 20px 40px 20px; /* Am redus de la 80px la 40px */
     box-sizing: border-box;
     z-index: 5; 
     gap: 20px;
@@ -48,14 +48,14 @@ body {
 
 .welcome-text {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 4rem; /* Mărit de la 2.8rem */
     font-style: italic;
     color: var(--text-color);
     margin: 0;
     text-align: center;
     opacity: 0;
     animation: fadeInText 1.5s ease-out forwards;
-    line-height: 1.2;
+    line-height: 1.1; /* Puțin mai strâns pentru font mare */
 }
 
 .logo-central {
@@ -179,9 +179,16 @@ header {
 
 /* --- REGLAJE TELEFON --- */
 @media (max-width: 600px) {
-    .welcome-text { font-size: 2rem; }
-    .logo-central { max-height: 45vh; }
-    #intro-screen { padding-top: 100px; gap: 10px; }
+    .welcome-text { 
+        font-size: 3.2rem; /* Mult mai mare pe mobil */
+    }
+    .logo-central { 
+        max-height: 40vh; /* Ajustăm puțin poza ca să nu se bată cu textul */
+    }
+    #intro-screen { 
+        padding-top: 50px; /* Redus de la 100px */
+        gap: 10px; 
+    }
     h2 { font-size: 1.8rem; }
 }
 
