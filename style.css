@@ -349,6 +349,10 @@ footer {
     z-index: 10;
     pointer-events: none;
 }
+.footer-label {
+    color: #000000; /* Forțăm culoarea neagră doar pentru "Created" */
+    font-weight: bold; /* Opțional: îl poți face puțin mai gros să iasă în evidență */
+}
 .contact-container {
     text-align: center;
     padding: 2rem 1.25rem; /* ~32px sus, 20px lateral */
