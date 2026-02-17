@@ -306,6 +306,40 @@ header {
     background: #8d6e63;
     color: #fff;
 }
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%; /* Le duce la jumătatea înălțimii */
+    transform: translateY(-50%); /* Le centrează perfect pe verticală */
+    background: rgba(0, 0, 0, 0.4); /* Fundal negru semi-transparent */
+    color: white;
+    border: none;
+    font-size: 1.8rem; /* Săgeata să fie mare și clară */
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Butonul din stânga */
+.prev-btn {
+    left: 0;
+    border-radius: 0 5px 5px 0; /* Colțuri rotunjite doar spre interior */
+}
+
+/* Butonul din dreapta */
+.next-btn {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Efect când pui mouse-ul pe ele sau apeși pe telefon */
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0.8rem; /* Se lărgesc puțin la hover */
+}
 
 /* ANIMAȚII */
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
