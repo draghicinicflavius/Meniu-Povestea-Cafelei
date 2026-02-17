@@ -46,14 +46,14 @@ const desertData = [
     { 
         name: "BISCOTTINO", 
         img: "images/biscotino.jpg", 
-        price: "25.00 LEI",
-        weight: "90 g",
+        price: "20.00 LEI",
+        weight: "115 g",
         desc: "delicatețea laptelui și biscuiții crocanți Oreo, regăsiți într-o formulă delicioasă"
     },
     { 
         name: "APPLE CAKE", 
         img: "images/applecake.jpg", 
-        price: "25.00 LEI",
+        price: "20.00 LEI",
         weight: "116 g",
         desc: "o bucată din gustul copilăriei, redescoperită în mărul cu scorțișoară, crema de vanilie și blatul de biscuiți"
     },
@@ -72,19 +72,48 @@ const desertData = [
         desc: "mousse-ul cu lichior și sos de caramel, în glazură de ciocolată, oferă o experiență gustativă desăvârșită"
     },
     { 
+        name: "ÎNGHEȚATĂ DE COCOS", 
+        img: "images/cocos.jpg", 
+        price: "25.00 LEI",
+        weight: "130 g",
+        desc: " "
+    },
+    { 
         name: "SORBET DE LĂMÂIE", 
         img: "images/lemon-sorbet.jpg", 
         price: "25.00 LEI",
         weight: "90 g",
-        desc: "sorbet revigorant de lamaie servit in coaja fructului"
+        desc: " "
     },
     { 
         name: "ÎNGHEȚATĂ CARAMEL SĂRAT", 
         img: "images/caramel.jpg", 
-        price: "20.00 LEI",
+        price: "25.00 LEI",
         weight: "90 g",
         desc: "înghețată cu caramel sărat și cu caramele toffee"
+    },
+    { 
+        name: "SORBET DE PERE", 
+        img: "images/sorbetpere.jpg", 
+        price: "25.00 LEI",
+        weight: "90 g",
+        desc: "sorbet de pere cu sos de pere Williams"
+    },
+    { 
+        name: "TROPICAL DREAM", 
+        img: "images/tropical1.jpg", 
+        price: "17.00 LEI",
+        weight: "90 g",
+        desc: "ananas, căpșuni, papaya + suc de mere"
+    },
+    { 
+        name: "FOREST BREEZE", 
+        img: "images/tropical2.jpg", 
+        price: "17.00 LEI",
+        weight: "90 g",
+        desc: "căpșuni, vișine, coacăze negre, coacăze roșii, mure + suc de mere"
     }
+
 
 ];
 
