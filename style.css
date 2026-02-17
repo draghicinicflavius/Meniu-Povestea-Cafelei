@@ -7,66 +7,51 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-color: #1a1a1a; /* Doar în caz că nu se încarcă poza */
+    background-color: #1a1a1a; 
     color: var(--text-color);
-    overflow: hidden; /* Fără scroll pe tot site-ul */
+    overflow: hidden; 
     height: 100vh;
 }
 
 /* --- 1. FUNDALUL MAGIC (AMBIENT) --- */
-/* Acesta e cel cețos din spate. Arată bine în screenshot-ul tău */
 #ambient-bg {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
-    /* POZA TA DE FUNDAL */
     background-image: url('images/povesteacafelei.jpeg'); 
     background-size: cover;
     background-position: center;
-    
-    /* Blur puternic */
     filter: blur(25px) brightness(0.9); 
     transform: scale(1.1);
     z-index: -2;
 }
 
-/* --- 2. PAGINA DE START (Aici era buba) --- */
+/* --- 2. PAGINA DE START --- */
 #intro-screen {
-    display: none; /* Ascuns implicit */
+    display: none; 
     height: 100vh;
     width: 100%;
-    
-    /* Centrare perfectă */
     justify-content: center;
     align-items: center;
-    
     padding: 20px;
     box-sizing: border-box;
-    z-index: 1; /* Peste fundalul cețos */
+    z-index: 1; 
 }
 
-/* CORECTURA: Acest selector specific forțează afișarea */
 #intro-screen.active-page {
-    display: flex !important; /* IMPORTANT: Asta îl face vizibil */
+    display: flex !important; 
     animation: fadeIn 0.5s ease-in;
 }
 
 .logo-central {
-    /* Dimensiuni generoase ca să se vadă desenul */
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 80vh; /* Lăsăm puțin loc sus/jos */
-    
+    max-height: 80vh; 
     object-fit: contain;
-    
-    /* Umbră fină să se desprindă de ceață */
     filter: drop-shadow(0 15px 25px rgba(0,0,0,0.3));
-    
-    /* Animația de respirație e aici! */
     animation: breathe 4s infinite ease-in-out;
 }
 
@@ -76,25 +61,47 @@ body {
     100% { transform: scale(1); }
 }
 
-/* --- 3. PAGINILE CU TEXT --- */
+/* --- 3. PAGINILE CU TEXT (MODIFICAT PENTRU A FI MAI SUS) --- */
 .page-content {
-    display: none; /* Ascuns implicit */
+    display: none; 
     height: 100vh;
-    overflow-y: auto; /* Scroll doar în interiorul listei */
-    padding: 80px 20px 40px 20px;
+    overflow-y: auto; 
+    /* Am scăzut padding-top de la 80px la 40px pentru a ridica titlul */
+    padding: 40px 20px 40px 20px;
     box-sizing: border-box;
 }
+/* 1. Ascunde scrollbar-ul pentru Chrome, Safari și Opera */
+.page-content::-webkit-scrollbar {
+    display: none;
+}
 
-/* Când pagina cu text devine activă */
+/* 2. Ascunde scrollbar-ul pentru Firefox și IE/Edge */
+.page-content {
+    -ms-overflow-style: none;  /* IE și Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 section.page-content.active-page {
     display: block;
     animation: slideUp 0.4s ease-out;
 }
 
-/* Cutia albă cu produse */
 section.page-content {
     max-width: 800px;
     margin: 0 auto;
+}
+
+/* --- STIL MOTTO (NOU) --- */
+.motto {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+    margin-top: -20px; /* Îl trage mai aproape de titlu */
+    margin-bottom: 35px; /* Spațiu până la produse */
+    font-size: 1.1rem;
+    line-height: 1.4;
+    padding: 0 10px;
 }
 
 /* --- STIL PRODUSE --- */
@@ -104,7 +111,7 @@ h2 {
     text-align: center;
     border-bottom: 2px solid var(--text-color);
     padding-bottom: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 25px; /* Micșorat puțin */
 }
 
 .produs {
@@ -117,8 +124,8 @@ h2 {
 }
 
 .detalii h3 { margin: 0; font-size: 1.2rem; }
-.detalii p { margin: 2px 0 0 0; font-size: 0.9rem; font-style: italic; }
-.pret { font-weight: bold; font-size: 1.2rem; min-width: 70px; text-align: right; }
+.detalii p { margin: 2px 0 0 0; font-size: 0.9rem; font-style: italic; color: #5d4037; }
+.pret { font-weight: bold; font-size: 1.2rem; min-width: 85px; text-align: right; }
 
 /* --- HEADER & MENIU --- */
 header {
@@ -131,7 +138,7 @@ header {
 
 .hamburger-menu {
     cursor: pointer;
-    background: rgba(62, 39, 35, 0.9); /* Maro transparent */
+    background: rgba(62, 39, 35, 0.9); 
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
