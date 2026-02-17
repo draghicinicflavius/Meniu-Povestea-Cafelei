@@ -183,7 +183,7 @@ header {
 /* --- REGLAJE TELEFON --- */
 @media (max-width: 600px) {
     .welcome-text { 
-        font-size: 3.5rem !important; 
+        font-size: 2.5rem !important; 
         margin-bottom: 40px !important;
     }
     #intro-screen { 
