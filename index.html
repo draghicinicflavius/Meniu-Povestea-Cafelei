@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Povestea Cafelei - Meniu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="ambient-bg"></div>
+
+    <header>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <nav id="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="showPage('intro-screen')">Acasă</a></li>
+            <li><a href="#" onclick="showPage('cafea')">Cafea & Energie</a></li>
+            <li><a href="#" onclick="showPage('specialitati')">Specialități</a></li>
+            <li><a href="#" onclick="showPage('racoritoare')">Răcoritoare</a></li>
+            <li><a href="#" onclick="showPage('alcool')">Bar & Cocktail</a></li>
+            <li><a href="#" onclick="showPage('pizza')">Pizza</a></li>
+        </ul>
+    </nav>
+
+    <div id="intro-screen" class="active-page">
+        <img src="images/povesteacafelei.jpeg" alt="Povestea Cafelei" class="logo-central">
+    </div>
+
+    <section id="cafea" class="page-content">
+        <h2>Cafea & Energie</h2>
+        <div class="produs">
+            <div class="detalii"><h3>Espresso</h3><p>30ml</p></div>
+            <div class="pret">9 RON</div>
+        </div>
+        <div class="produs">
+            <div class="detalii"><h3>Cappuccino</h3><p>150ml</p></div>
+            <div class="pret">12 RON</div>
+        </div>
+        <div class="produs">
+            <div class="detalii"><h3>Frappé</h3><p>360ml</p></div>
+            <div class="pret">20 RON</div>
+        </div>
+    </section>
+
+    <section id="pizza" class="page-content">
+        <h2>Pizza</h2>
+        <div class="produs">
+            <div class="detalii"><h3>Double Peperoni</h3><p>450g</p></div>
+            <div class="pret">40 RON</div>
+        </div>
+        <div class="produs">
+            <div class="detalii"><h3>Quattro Formaggi</h3><p>380g</p></div>
+            <div class="pret">45 RON</div>
+        </div>
+    </section>
+
+    <section id="racoritoare" class="page-content">
+        <h2>Răcoritoare</h2>
+        <div class="produs">
+            <div class="detalii"><h3>Limonadă cu miere</h3><p>450ml</p></div>
+            <div class="pret">15 RON</div>
+        </div>
+        <div class="produs">
+            <div class="detalii"><h3>Coca Cola / Fanta</h3><p>330ml</p></div>
+            <div class="pret">8 RON</div>
+        </div>
+    </section>
+
+    <section id="alcool" class="page-content">
+        <h2>Bar & Cocktail</h2>
+        <div class="produs">
+            <div class="detalii"><h3>Aperol Spritz</h3><p>300ml</p></div>
+            <div class="pret">15 RON</div>
+        </div>
+        <div class="produs">
+            <div class="detalii"><h3>Ursus Premium</h3><p>330ml</p></div>
+            <div class="pret">8 RON</div>
+        </div>
+    </section>
+
+    <footer><small>by Flavius Draghici</small></footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

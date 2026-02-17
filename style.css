@@ -1,0 +1,184 @@
+:root {
+    --text-color: #3e2723; /* Maro închis */
+    --gold: #8d6e63;
+    --bg-overlay: rgba(255, 255, 255, 0.95); /* Fundal aproape opac pentru text */
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #1a1a1a; /* Doar în caz că nu se încarcă poza */
+    color: var(--text-color);
+    overflow: hidden; /* Fără scroll pe tot site-ul */
+    height: 100vh;
+}
+
+/* --- 1. FUNDALUL MAGIC (AMBIENT) --- */
+/* Acesta e cel cețos din spate. Arată bine în screenshot-ul tău */
+#ambient-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* POZA TA DE FUNDAL */
+    background-image: url('images/povesteacafelei.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    
+    /* Blur puternic */
+    filter: blur(25px) brightness(0.9); 
+    transform: scale(1.1);
+    z-index: -2;
+}
+
+/* --- 2. PAGINA DE START (Aici era buba) --- */
+#intro-screen {
+    display: none; /* Ascuns implicit */
+    height: 100vh;
+    width: 100%;
+    
+    /* Centrare perfectă */
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1; /* Peste fundalul cețos */
+}
+
+/* CORECTURA: Acest selector specific forțează afișarea */
+#intro-screen.active-page {
+    display: flex !important; /* IMPORTANT: Asta îl face vizibil */
+    animation: fadeIn 0.5s ease-in;
+}
+
+.logo-central {
+    /* Dimensiuni generoase ca să se vadă desenul */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh; /* Lăsăm puțin loc sus/jos */
+    
+    object-fit: contain;
+    
+    /* Umbră fină să se desprindă de ceață */
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.3));
+    
+    /* Animația de respirație e aici! */
+    animation: breathe 4s infinite ease-in-out;
+}
+
+@keyframes breathe {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); } 
+    100% { transform: scale(1); }
+}
+
+/* --- 3. PAGINILE CU TEXT --- */
+.page-content {
+    display: none; /* Ascuns implicit */
+    height: 100vh;
+    overflow-y: auto; /* Scroll doar în interiorul listei */
+    padding: 80px 20px 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Când pagina cu text devine activă */
+section.page-content.active-page {
+    display: block;
+    animation: slideUp 0.4s ease-out;
+}
+
+/* Cutia albă cu produse */
+section.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- STIL PRODUSE --- */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.produs {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted rgba(62, 39, 35, 0.4);
+    padding-bottom: 5px;
+}
+
+.detalii h3 { margin: 0; font-size: 1.2rem; }
+.detalii p { margin: 2px 0 0 0; font-size: 0.9rem; font-style: italic; }
+.pret { font-weight: bold; font-size: 1.2rem; min-width: 70px; text-align: right; }
+
+/* --- HEADER & MENIU --- */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    background: rgba(62, 39, 35, 0.9); /* Maro transparent */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #3e2723;
+    transition: 0.4s ease;
+    z-index: 999;
+    padding-top: 80px;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+}
+
+#mobile-nav.active { right: 0; }
+#mobile-nav ul { list-style: none; padding: 0; }
+#mobile-nav a {
+    display: block;
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #666;
+    z-index: 10;
+    pointer-events: none;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
