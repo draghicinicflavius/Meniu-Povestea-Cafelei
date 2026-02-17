@@ -261,14 +261,14 @@ header {
 
 .slider-container {
     position: relative;
-    height: 18rem;
+    aspect-ratio: 1 / 1;
     background: #000;
 }
 
 .slider-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .info-card {
