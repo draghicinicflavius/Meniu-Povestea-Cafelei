@@ -27,28 +27,28 @@ const desertData = [
         img: "images/pistachio.png", 
         price: "20.00 LEI",
         weight: "100 g",
-        desc: "mousse de fistic pe blat de vanilie cu sos de fructe de padure"
+        desc: "mousse de fistic pe blat de vanilie cu sos intens de fistic și glazură crocantă de ciocolată cu fistic"
     },
     { 
         name: "TIRAMISU", 
         img: "images/tiramisu.jfif", 
         price: "20.00 LEI",
         weight: "100 g",
-        desc: "faimosul desert italian cu crema fina de mascarpone si espresso"
+        desc: "faimosul desert italian ce combină crema fină de mascarpone, cu blatul plin de gustul unui expresso"
     },
     { 
         name: "LAVA CAKE", 
         img: "images/lava-cake.jpg", 
         price: "20.00 LEI",
         weight: "120 g",
-        desc: "blat dens de cacao cu inima fierbinte de ciocolata"
+        desc: "un blat dens de cacao ce învelește o inimă fierbinte din cea mai fină ciocolată"
     },
     { 
         name: "BISCOTTINO", 
         img: "images/biscotino.jpg", 
         price: "25.00 LEI",
         weight: "90 g",
-        desc: "o bucată din gustul copilăriei, redescoperită în mărul cu scorțișoară, crema de vanilie și blatul de biscuiți"
+        desc: "delicatețea laptelui și biscuiții crocanți Oreo, regăsiți într-o formulă delicioasă"
     },
     { 
         name: "APPLE CAKE", 
@@ -62,7 +62,14 @@ const desertData = [
         img: "images/cheesecake.jpg", 
         price: "20.00 LEI",
         weight: "133 g",
-        desc: "un tort rezistibil cu textura fina de branza si blat de biscuiti"
+        desc: "un tort irezistibil cu textură fină din cremă de branza si blat de biscuiți"
+    },
+    { 
+        name: "BAILEYS CAKE", 
+        img: "images/baileys.jfif", 
+        price: "20.00 LEI",
+        weight: "100 g",
+        desc: "mousse-ul cu lichior și sos de caramel, în glazură de ciocolată, oferă o experiență gustativă desăvârșită"
     },
     { 
         name: "SORBET DE LĂMÂIE", 
@@ -72,11 +79,11 @@ const desertData = [
         desc: "sorbet revigorant de lamaie servit in coaja fructului"
     },
     { 
-        name: "BAILEYS CAKE", 
-        img: "images/baileys.jfif", 
+        name: "ÎNGHEȚATĂ CARAMEL SĂRAT", 
+        img: "images/caramel.jpg", 
         price: "20.00 LEI",
-        weight: "100 g",
-        desc: "mousse-ul cu lichior și sos de caramel, în glazură de ciocolată, oferă o experiență gustativă desăvârșită"
+        weight: "90 g",
+        desc: "înghețată cu caramel sărat și cu caramele toffee"
     }
 
 ];
