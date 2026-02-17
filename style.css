@@ -157,16 +157,17 @@ header {
     margin: 5px 0;
 }
 
+/* --- SECȚIUNE ALERGENI MODIFICATĂ (NEGRU) --- */
 .info-alergeni {
     margin-top: 50px;
     padding-top: 20px;
-    border-top: 1px double var(--gold); /* O linie dublă fină deasupra */
+    border-top: 1px solid #000000; /* Linie solidă neagră */
     font-size: 0.85rem;
     font-style: italic;
-    color: var(--gold);
+    color: #000000; /* Text negru */
     text-align: center;
     line-height: 1.6;
-    opacity: 0.9;
+    opacity: 1; /* Vizibilitate maximă */
 }
 
 .lista-alergeni {
@@ -180,11 +181,11 @@ header {
     padding-bottom: 5px;
 }
 
-/* Bulinele aurii ca în poză */
+/* Bulinele negre */
 .lista-alergeni li::before {
     content: "•";
     margin-right: 8px;
-    color: var(--gold);
+    color: #000000; /* Bulină neagră */
 }
 
 /* Ajustare pentru mobil să nu fie textul prea înghesuit */
