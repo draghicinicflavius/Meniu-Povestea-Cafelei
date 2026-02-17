@@ -157,6 +157,45 @@ header {
     margin: 5px 0;
 }
 
+.info-alergeni {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px double var(--gold); /* O linie dublă fină deasupra */
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--gold);
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.lista-alergeni {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.lista-alergeni li {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Bulinele aurii ca în poză */
+.lista-alergeni li::before {
+    content: "•";
+    margin-right: 8px;
+    color: var(--gold);
+}
+
+/* Ajustare pentru mobil să nu fie textul prea înghesuit */
+@media (max-width: 600px) {
+    .info-alergeni {
+        font-size: 0.75rem;
+        margin-top: 30px;
+        padding-bottom: 40px; /* Spațiu să nu se suprapună cu footer-ul fix */
+    }
+}
+
 #mobile-nav {
     position: fixed;
     top: 0;
@@ -179,6 +218,7 @@ header {
     font-size: 1.2rem;
     font-family: 'Playfair Display', serif;
 }
+
 
 /* --- REGLAJE TELEFON --- */
 @media (max-width: 600px) {
