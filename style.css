@@ -16,7 +16,7 @@ html {
 @media (max-width: 600px) {
     #intro-screen { 
         /* Forțăm spațiul de sus să fie mic pe mobil */
-        padding-top: 3vh !important; 
+        padding-top: 8vh !important; 
     }
     .welcome-text { 
         font-size: 2.8rem !important; 
