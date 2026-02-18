@@ -24,14 +24,14 @@ function showPage(pageId) {
 const desertData = [
     { 
         name: "PISTACHIO DOME", 
-        img: "images/pistachio.png", 
+        img: "images/pistachio.jpg", 
         price: "20.00 LEI",
         weight: "100 g",
         desc: "mousse de fistic pe blat de vanilie cu sos intens de fistic și glazură crocantă de ciocolată cu fistic"
     },
     { 
         name: "TIRAMISU", 
-        img: "images/tiramisu.jfif", 
+        img: "images/tiramisu.jpg", 
         price: "20.00 LEI",
         weight: "100 g",
         desc: "faimosul desert italian ce combină crema fină de mascarpone, cu blatul plin de gustul unui expresso"
@@ -66,7 +66,7 @@ const desertData = [
     },
     { 
         name: "BAILEYS CAKE", 
-        img: "images/baileys.jfif", 
+        img: "images/baileys.jpg", 
         price: "20.00 LEI",
         weight: "100 g",
         desc: "mousse-ul cu lichior și sos de caramel, în glazură de ciocolată, oferă o experiență gustativă desăvârșită"
