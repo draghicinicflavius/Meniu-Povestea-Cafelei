@@ -195,6 +195,8 @@ header {
     border-radius: 0.8rem;
     overflow: hidden;
     box-shadow: 0 0.62rem 1.87rem rgba(0,0,0,0.5);
+
+    backface-visibility: hidden;
 }
 
 .card-header {
@@ -228,6 +230,10 @@ header {
     height: 100%;
     object-fit: cover; 
     display: block;
+
+    will-change: opacity, transform; /* Îi spune browserului să se pregătească de mișcare */
+    transform: translateZ(0); /* Activează placa grafică a telefonului */
+    transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .info-card {
