@@ -14,19 +14,17 @@ html {
     }
 }
 @media (max-width: 600px) {
-    .welcome-text { 
-        font-size: 2.5rem !important; 
-        /* Reducem spațiul dintre text și logo ca să urce totul mai sus */
-        margin-bottom: 1.5rem !important; 
-    }
     #intro-screen { 
-        /* ELIMINĂM padding-top: 12vh !important; */
-        padding-top: 2rem !important; 
+        /* Forțăm spațiul de sus să fie mic pe mobil */
+        padding-top: 5vh !important; 
     }
-    .info-alergeni {
-        font-size: 0.75rem;
-        margin-top: 1.87rem;
-        padding-bottom: 2.5rem; 
+    .welcome-text { 
+        font-size: 2.8rem !important; 
+        margin-bottom: 1.5rem !important;
+    }
+    .logo-central {
+        /* Pe telefoane foarte înguste, îi dăm voie să se desfășoare */
+        max-height: 70vh; 
     }
 }
 
@@ -61,14 +59,13 @@ body {
     height: 100vh;
     width: 100%;
     flex-direction: column; 
-    /* Schimbăm în center pentru a echilibra spațiul de sus și de jos */
-    justify-content: center !important; 
+    /* Schimbăm în flex-start pentru a controla manual cât de sus stă totul */
+    justify-content: flex-start !important; 
     align-items: center;
-    /* Reducem padding-ul drastic: 2rem sus, 1.25rem lateral, 2.5rem jos */
-    padding: 2rem 1.25rem 2.5rem 1.25rem; 
+    /* Reducem spațiul de sus la doar 8% din înălțimea ecranului */
+    padding: 8vh 1.25rem 2.5rem 1.25rem; 
     box-sizing: border-box;
     z-index: 5; 
-    gap: 0;
 }
 
 #intro-screen.active-page {
@@ -78,22 +75,21 @@ body {
 
 .welcome-text {
     font-family: 'Playfair Display', serif;
-    font-size: 4rem; 
+    font-size: 3.5rem; /* Puțin mai mic pentru a lăsa loc logo-ului */
     font-style: italic;
     color: var(--text-color);
     text-align: center;
-    opacity: 0;
-    animation: fadeInText 1.5s ease-out forwards;
     line-height: 1.1;
-    margin-bottom: 3.75rem !important;
+    /* Reducem distanța dintre text și logo */
+    margin-bottom: 2rem !important; 
+    margin-top: 0;
 }
 
 .logo-central {
-    width: auto;
+    width: 95%; /* Ocupă aproape toată lățimea pe telefon */
     height: auto;
-    max-width: 90%;
-    /* Am limitat înălțimea la 50% din ecran ca să nu mai fie așa uriaș */
-    max-height: 50vh; 
+    /* Mărim înălțimea maximă la 65% din ecran */
+    max-height: 65vh; 
     object-fit: contain;
     filter: drop-shadow(0 0.9rem 1.5rem rgba(0,0,0,0.2));
     animation: breathe 4s infinite ease-in-out;
