@@ -27,14 +27,14 @@ const desertData = [
         img: "images/pistachio.jpg", 
         price: "20.00 LEI",
         weight: "100 g",
-        desc: "mousse de fistic pe blat de vanilie cu sos intens de fistic și glazură crocantă de ciocolată cu fistic"
+        desc: "mousse de fistic pe blat de vanilie cu sos de fistic și glazură crocantă de ciocolată"
     },
     { 
         name: "TIRAMISU", 
         img: "images/tiramisu.jpg", 
         price: "20.00 LEI",
         weight: "100 g",
-        desc: "faimosul desert italian ce combină crema fină de mascarpone, cu blatul plin de gustul unui expresso"
+        desc: "faimosul desert ce combină cremă de mascarpone, cu blatul plin de gustul unui expresso"
     },
     { 
         name: "LAVA CAKE", 
@@ -55,7 +55,7 @@ const desertData = [
         img: "images/applecake.jpg", 
         price: "20.00 LEI",
         weight: "116 g",
-        desc: "o bucată din gustul copilăriei, redescoperită în mărul cu scorțișoară, crema de vanilie și blatul de biscuiți"
+        desc: "o bucată din gustul copilăriei, cu măr și scorțișoară, cremă de vanilie și blat de biscuiți"
     },
     { 
         name: "CHEESECAKE", 
@@ -69,7 +69,7 @@ const desertData = [
         img: "images/baileys.jpg", 
         price: "20.00 LEI",
         weight: "100 g",
-        desc: "mousse-ul cu lichior și sos de caramel, în glazură de ciocolată, oferă o experiență gustativă desăvârșită"
+        desc: "mousse cu lichior și sos de caramel, în glazură de ciocolată"
     },
     { 
         name: "ÎNGHEȚATĂ DE COCOS", 
